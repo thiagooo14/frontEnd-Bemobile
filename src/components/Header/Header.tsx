@@ -1,4 +1,3 @@
-import React from 'react';
 import { logo } from '../../assets'
 import './Header.scss';
 
@@ -9,7 +8,5 @@ const Header: React.FC = () => {
     </header>
   );
 };
-
-// teste
 
 export default Header;

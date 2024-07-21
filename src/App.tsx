@@ -1,15 +1,14 @@
 import Header from './components/Header/Header';
+import Home from './pages/home/Home';
 
 
 function App() {
   return (
     <div>
       <Header/>
-      <h1>Hello world</h1>
+      <Home/>
     </div>
   )
 }
-
-//criar branch dev
 
 export default App;
