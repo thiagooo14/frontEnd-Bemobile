@@ -1,9 +1,14 @@
+import Header from './components/Header/Header';
+import Home from './pages/home/Home';
+
+
 function App() {
   return (
-    <>
-      <h1>Hello world</h1>
-    </>
+    <div>
+      <Header/>
+      <Home/>
+    </div>
   )
 }
 
-export default App
+export default App;
