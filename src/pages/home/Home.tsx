@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import './Home.scss';
 import { getEmployees } from '../../api/api';
 import { Employee } from '../../types/types';
-import EmployeeTable from '../../components/EmployeeTable/EmployeeTable';
 import SearchInput from '../../components/SearchInput /SearchInput';
+import Table from '../../components/Table/table';
 
 const Home = () => {
   const [employees, setEmployees] = useState<Employee[]>([]);
@@ -32,18 +32,9 @@ const Home = () => {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-        {/* <div className='home__header__search'>
-          <input
-            className='home__header__search--input'
-            type='text'
-            placeholder='Pesquisar'
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-          />
-        </div> */}
       </div>
       <div className='home__table'>
-        <EmployeeTable employees={filteredEmployees} />
+        <Table employees={filteredEmployees} />
       </div>
     </div>
   );
