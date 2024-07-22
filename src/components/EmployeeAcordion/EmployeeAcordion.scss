@@ -1,0 +1,62 @@
+.employee-acordion {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 2px;
+
+  &__header {
+    background: linear-gradient(180deg, #5a84c0 0%, #594ed2 100%);
+    color: #ffffff;
+    padding-block: 1rem;
+    padding-left: 2rem;
+    text-align: left;
+    &:first-child {
+      border-top-left-radius: 8px;
+    }
+    &:last-child {
+      border-top-right-radius: 8px;
+    }
+  }
+
+  &__body {
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  &__cell {
+    background-color: #ffffff;
+    padding: 8px;
+    padding-left: 2rem;
+    border: none;
+    text-align: left;
+    &--expanded {
+      border: 1px dashed #ddd;
+      padding: 16px 0 0 0;
+      border-inline: none;
+      border-top: none;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 18.75px;
+      max-width: 296px;
+      text-align: center;
+
+      &:first-child {
+        text-align: start;
+      }
+
+      &:last-child {
+        text-align: end;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__image {
+    border-radius: 100%;
+  }
+
+  &__row {
+    &--expanded {
+      width: 100%;
+      border-collapse: collapse;
+    }
+  }
+}
