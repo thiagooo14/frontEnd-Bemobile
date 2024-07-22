@@ -4,11 +4,13 @@
 
 Este projeto é uma aplicação React que utiliza SASS e Axios para criar uma tabela responsiva. A tabela inclui colunas dcom os dados de Foto, Nome, Cargo, Data de Admissão e Telefone, e possui uma funcionalidade de busca que filtra as informações pelo cargo, nome e telefone.
 
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/caaf6061-fe28-49cf-82e4-798cda52a150)
+
 
 caso a aplicação seja aberta em um mobile (telas com 755px ou menos), é criado modo de responsividade, a tabela vira um acordeon, suprimindo as informações de Cargo, Data de Admissão e telefone, mostrando apenas quando clicado pra expandir
 
-![alt text](image-1.png)
+![image](https://github.com/user-attachments/assets/b065cb72-2ec8-4100-961d-9672e1fe2a15)
+
 
 ## Pré-Requisitos
 
